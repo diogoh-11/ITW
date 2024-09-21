@@ -1,0 +1,52 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="../lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../lib/font-awesome/dist/css/font-awesome.min.css" rel="stylesheet" />
+
+    <title>Javascript test file</title>
+    <script src="myScript.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="row">
+            <div class="col-md-3">
+                <input id="op1" value="2" class="form-control" />
+            </div>
+            <div class="col-md-3">
+                <select id="operacao" onchange="getOperacao()" class="form-select">
+                    <option value="+"> Soma </option>
+                    <option value="-"> Subtração </option>
+                    <option value="*"> Multiplicação </option>
+                    <option value=":"> Divisão </option>
+                    <option value="!"> Fatorial </option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <input id="op2" type="number" value="3" class="form-control" />
+            </div>
+            <div class="col-md-3">
+                <input id="res" value="" class="form-control" />
+            </div>
+            <hr />
+            <div class="text-center">
+
+                <button onclick="calcula()" class="btn btn-primary">Calcular</button>
+            </div>
+        </div>
+        <script src="myScript.js"></script>
+    </div>
+    
+
+</body>
+</html>
+

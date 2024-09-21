@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lâmpada</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .lamp {
+            width: 300px;
+            height: 500px;
+            background-image: url('https://iheartcraftythings.com/wp-content/uploads/2021/04/Light-Bulb-DRAWING-%E2%80%93-STEP-8.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+            .lamp.on {
+                background-image: url('https://iheartcraftythings.com/wp-content/uploads/2021/04/Light-Bulb-DRAWING-%E2%80%93-STEP-10.jpg');
+            }
+    </style>
+</head>
+<body>
+    <div class="lamp" onclick="toggleLamp()" alt="Lâmpada"></div>
+
+    <script>
+        function toggleLamp() {
+            var lamp = document.querySelector(".lamp");
+            lamp.classList.toggle("on");
+        }
+    </script>
+</body>
+</html>

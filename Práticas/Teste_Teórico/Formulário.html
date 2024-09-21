@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Formulário</title>
+    <style>
+        tr {
+            height: 50px;
+
+
+        }
+            td first-child{
+                           width: 120px;
+
+            }
+    </style>
+    
+</head>
+<body>
+    <form name="Data" action="http://192.168.160.36/FormEcho.aspx" method="post">
+        <h1>Usser Registration </h1>
+        <fieldset>
+            <legend>Informação Pessoal</legend>
+            <table width="100%">
+                <tr>
+                    <td> <label for="Curso">Curso:</label></td>
+                    <td><textarea>Insira o nome</textarea>     
+                    </td>
+                </tr>
+                <tr>
+                    <td> <label for="Nome">Nome:</label></td>
+                    <td>
+                        <input type="text" name="FirstName" value="Nome" placeholder="Nome" />
+                    </td>
+                </tr>
+                <tr>
+                    <td> <label for="Sobrenome">Sobrenome:</label></td>
+                    <td>
+                        <input type="text" name="LastName" placeholder="Sobrenome" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Password">Palavra-Passe:</label></td>
+                    <td>
+                        <input type="password" name="Password" placeholder="Digite a palavra passe" />
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <table width="100%" height="100">
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>Meios de Transporte</legend>
+                        <input type="checkbox" name="vehicle" value="Bicicleta">Bicicleta<br />
+                        <input type="checkbox" name="vehicle" value="Carro">Carro<br />
+                        <input type="checkbox" name="vehicle" value="Comboio">Comboio
+                    </fieldset>
+                </td>
+                <td>
+                    <fieldset>
+                        <legend>Cor preferida</legend>
+                        <input type="radio" name="color" value="Azul">Azul<br />
+                        <input type="radio" name="color" value="Verde">Verde<br />
+                        <input type="radio" name="color" value="Vermelho">Vermelho<br />
+                        <input type="radio" name="color" value="Outra">Outra
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <center>
+                        <input name="Button" type="Submit" value="Enviar formulário" />
+                        <input name="resetBtn" type="reset" value="Limpar Formulário" />
+                    </center>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+
+
+
+
+
+

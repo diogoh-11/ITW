@@ -1,0 +1,12 @@
+﻿body {
+    font-family:"Open Scans", sans-serif
+
+   
+}
+.tecla{
+    height:80px;
+    width:80px;
+    border-radius:50%;
+    text-align:center;
+    font-size:32px;
+}

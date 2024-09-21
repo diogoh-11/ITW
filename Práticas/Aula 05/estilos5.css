@@ -1,0 +1,45 @@
+﻿body {
+    font-family: Arial;
+    margin: 0;
+}
+
+.tudo {
+    margin: 0% 10% 0% 10%
+}
+
+.banner {
+    height: 600px;
+    margin: auto;
+    background-image: url("https://novonegocio.com.br/wp-content/uploads/2019/08/construcao.jpg");
+    background-position: center center;
+}
+
+#menutop {
+    color: white;
+    padding: 1px;
+    height: 70px;
+}
+
+#footer {
+    height: 70px;
+    clear: both;
+    border-top: solid 1px #333;
+    line-height: 40px;
+    padding: 0px;
+    color: white;
+    
+}
+.left-content {
+    float: left; /* Alinha o conteúdo à esquerda */
+    width: 500px;
+    text-align: center;
+}
+
+.right-content {
+    float: right; /* Alinha o conteúdo à direita */
+}
+
+
+
+
+

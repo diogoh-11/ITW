@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div id="calculadora">
+        <input id="op1">
+        <select id="operador">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input id="op2">
+        <button onclick="calculadora()">Result</button>
+    </div>
+    <script>
+        function calculadora() {
+            // aceder aos valores dos elementos do DOM
+            var op1 = document.getElementById("op1").value;
+            var op2 = document.getElementById("op2").value;
+            var op = document.getElementById("operador").value;
+            var result = 0;
+            // verificar qual é a operação a ser realizada,
+            // tendo em conta o valor da variável 'op'
+            switch (op) {
+                case "+":
+                    // utilizar a função parseFloat() para converter uma string num float
+                    result = parseFloat(op1) + parseFloat(op2);
+                    break;
+                case "-":
+                    result = parseFloat(op1) - parseFloat(op2);
+                    break;
+                case "*":
+                    result = parseFloat(op1) * parseFloat(op2);
+                    break;
+                case "/":
+                    if (op2 != 0) {
+                        result = parseFloat(op1) / parseFloat(op2);
+                    } else {
+                        alert("Error: division by 0!");
+                    }
+                    break;
+                default:
+                    alert("Operation not supported!");
+                    break;
+            }
+            alert("Result = " + result);
+            return result;
+        }
+    </script>
+</body>
+</html>

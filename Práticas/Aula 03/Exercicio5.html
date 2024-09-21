@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="Joaquim Sousa Pinto">
+    <meta name="Keywords" content="formulário;fonte externa;CSS">
+    <meta name="Description" content="Formulário com utilização de fonte externa e estilos CSS">
+    <title>Formulário</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        #body, input, select, textarea {
+            font-family: 'Open Sans', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+            input[type=submit], input[type=reset] {
+                padding: 0.375rem 0.75rem;
+                font-size: 1rem;
+            }
+
+            select, input[type=text], input[type=password] {
+                font-size: 1rem;
+                border: 1px solid #ced4da;
+                border-radius: 0.25rem;
+                width: 100%;
+            }
+
+        fieldset {
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+        }
+
+        textarea {
+            width: 100%;
+            font-size: 1rem;
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+        }
+    </style>
+</head>
+<body>
+    <form name="PersonData" action="http://192.168.160.36/FormEcho.aspx" method="post">
+        <h1>Informação Pessoal</h1>
+        <fieldset>
+            <legend>Informação Pessoal</legend>
+            <table width="100%">
+                <tr>
+                    <td widht="120"> <label for="Curso">Curso:</label></td>
+                    <td>
+                        <select name="Curso">
+                            <option value="1" selected="selected">Licenciatura em Engenharia Informatica</option>
+                            <option value="2">Mestrado Integrado em Engenharia de Computadores e Telemática</option>
+                            <option value="3">Mestrado Integrado em Engenharia Eletronica e de Telecomunicações</option>
+                            <option value="4">Outro</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td widht="120"> <label for="Nome">Nome:</label></td>
+                    <td>
+                        <input type="text" name="FirstName" value="Nome" placeholder="Nome" />
+                    </td>
+                </tr>
+                <tr>
+                    <td widht="120"> <label for="Sobrenome">Sobrenome:</label></td>
+                    <td>
+                        <input type="text" name="LastName" placeholder="Sobrenome" />
+                    </td>
+                </tr>
+                <tr>
+                    <td widht="120"><label for="Password">Palavra-Passe:</label></td>
+                    <td>
+                        <input type="password" name="Password" placeholder="Digite a palavra passe" />
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Comentários</legend>
+            <dl>
+                <dd>
+                    <textarea name="Comments" rows="4" cols="80" placeholder="Insira os seus comentários"></textarea>
+                </dd>
+            </dl>
+        </fieldset>
+        <table width="100%" height="100">
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>Meios de Transporte</legend>
+                        <input type="checkbox" name="vehicle" value="Bicicleta">Bicicleta<br />
+                        <input type="checkbox" name="vehicle" value="Carro">Carro<br />
+                        <input type="checkbox" name="vehicle" value="Comboio">Comboio
+                    </fieldset>
+                </td>
+                <td>
+                    <fieldset>
+                        <legend>Cor preferida</legend>
+                        <input type="radio" name="color" value="Azul">Azul<br />
+                        <input type="radio" name="color" value="Verde">Verde<br />
+                        <input type="radio" name="color" value="Vermelho">Vermelho<br />
+                        <input type="radio" name="color" value="Outra">Outra
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <center>
+                        <input name="Button" type="Submit" value="Enviar formulário" />
+                        <input name="resetBtn" type="reset" value="Limpar Formulário" />
+                    </center>
+                </td>
+            </tr>   
+        </table>
+    </form>
+</body>
+</html>

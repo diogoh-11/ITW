@@ -1,0 +1,67 @@
+﻿body {
+    font-family: Arial;
+    margin: 0;
+}
+
+
+
+#menutop {
+    background-color: black;
+    color: white;
+    padding: 1px;
+    height: 50px;
+}
+
+#banner {
+    height: 500px;
+    color: white;
+    line-height: 600px;
+    font-size: 60px;
+    text-align: center;
+    font-weight: 300;
+    margin: auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+#content {
+    float: left;
+    width: 80%;
+    min-height: 600px;
+    color: black;
+    
+}
+
+#advertising {
+    min-height: 400px;
+    float: left;
+    width: 20%;
+    height: 600px;
+    background-color: yellow;
+}
+
+#footer {
+    height: 40px;
+    margin: auto;
+    clear: both;
+    border-top: solid 1px #333;
+    line-height: 40px;
+    padding: 10px;
+}
+
+
+.tudo {
+    margin: 0% 5% 0% 5%
+}
+.banner {
+    height: 600px;
+    margin: auto;
+    background-image: url("https://wallpapers.com/images/hd/dark-souls-4k-battlefield-iglm8x63rdfq25x4.jpg");
+    background-position: center center;
+}
+
+
+    
+
+
